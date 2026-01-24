@@ -108,13 +108,19 @@
             ],
             "id": "d0498b65-d97e-4788-b3be-68a48ebd781a",
             "source": {
-              "x": 740,
-              "y": 230
+              "x": 720,
+              "y": 220
             },
             "target": {
-              "x": 840,
-              "y": 330
-            }
+              "x": 820,
+              "y": 320
+            },
+            "vertices": [
+              {
+                "x": 750,
+                "y": 240
+              }
+            ]
           },
           {
             "position": {
@@ -236,7 +242,7 @@
               "y": 190
             },
             "size": {
-              "width": 112.5,
+              "width": 110,
               "height": 60
             },
             "attrs": {
@@ -345,19 +351,12 @@
               "hasOpenThreats": false,
               "providesAuthentication": true,
               "threats": []
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
             "position": {
-              "x": 850,
-              "y": 300
+              "x": 810,
+              "y": 290
             },
             "size": {
               "width": 120,
@@ -457,7 +456,7 @@
                 }
               ]
             },
-            "id": "b3f3e71d-3aba-4388-aec8-56127d8665c9",
+            "id": "4ebcc4ec-8f9f-474a-b9ea-9f51caa7eb2d",
             "zIndex": 13,
             "data": {
               "type": "tm.Store",
