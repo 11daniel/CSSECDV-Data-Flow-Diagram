@@ -200,7 +200,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "User sends user credentials",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -214,7 +214,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "User sends user credentials"
             ],
             "id": "703fadad-c7c8-44d4-9cab-aad5844c8f7b",
             "source": {
@@ -225,7 +225,12 @@
               "cell": "d35469ef-b5d1-47db-b275-4fb94e4fbec1",
               "port": "ecf9d112-2c5d-41b3-90dd-94df2312c47f"
             },
-            "vertices": []
+            "vertices": [
+              {
+                "x": 470,
+                "y": 270
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -280,13 +285,65 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "User is athenticated",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "User is athenticated"
+            ],
+            "id": "3452bbed-440d-4dd9-96ef-8116e922b236",
+            "source": {
+              "cell": "d35469ef-b5d1-47db-b275-4fb94e4fbec1",
+              "port": "ecf9d112-2c5d-41b3-90dd-94df2312c47f"
+            },
+            "target": {
+              "cell": "3fd02432-a9ae-43bf-be66-71adaf9a513c",
+              "port": "b17eb3dd-0a33-4714-9d9c-83460493d9c8"
+            },
+            "vertices": [
+              {
+                "x": 470,
+                "y": 320
+              }
+            ]
+          },
+          {
             "position": {
-              "x": 220,
-              "y": 350
+              "x": 230,
+              "y": 320
             },
             "size": {
-              "width": 112.5,
-              "height": 60
+              "width": 110,
+              "height": 120
             },
             "attrs": {
               "text": {
@@ -704,7 +761,7 @@
             },
             "size": {
               "width": 110,
-              "height": 120
+              "height": 140
             },
             "attrs": {
               "text": {
@@ -965,13 +1022,65 @@
               "y": 180
             },
             "target": {
-              "x": 870,
+              "x": 920,
               "y": 190
             },
             "vertices": [
               {
-                "x": 620,
+                "x": 660,
                 "y": 210
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 21,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Insert feedback comments",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Insert feedback comments"
+            ],
+            "id": "3a4840e4-84d5-41d6-86df-251bcc32ee03",
+            "source": {
+              "x": 340,
+              "y": 380
+            },
+            "target": {
+              "x": 520,
+              "y": 590
+            },
+            "vertices": [
+              {
+                "x": 470,
+                "y": 480
               }
             ]
           }
