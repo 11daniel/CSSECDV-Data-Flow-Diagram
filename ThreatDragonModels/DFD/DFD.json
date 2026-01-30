@@ -227,7 +227,7 @@
             },
             "vertices": [
               {
-                "x": 390,
+                "x": 400,
                 "y": 300
               }
             ]
@@ -389,40 +389,6 @@
             ]
           },
           {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "Generic Trust Boundary",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
-            },
-            "labels": [
-              "Generic Trust Boundary"
-            ],
-            "id": "b7ee603b-1f9e-4701-b78f-2611a941bbef",
-            "source": {
-              "x": 500,
-              "y": 110
-            },
-            "target": {
-              "x": 520,
-              "y": 520
-            },
-            "vertices": [
-              {
-                "x": 550,
-                "y": 310
-              }
-            ]
-          },
-          {
             "shape": "flow",
             "attrs": {
               "line": {
@@ -471,6 +437,40 @@
               {
                 "x": 890,
                 "y": 350
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Generic Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Generic Trust Boundary"
+            ],
+            "id": "b7ee603b-1f9e-4701-b78f-2611a941bbef",
+            "source": {
+              "x": 580,
+              "y": 30
+            },
+            "target": {
+              "x": 590,
+              "y": 510
+            },
+            "vertices": [
+              {
+                "x": 520,
+                "y": 270
               }
             ]
           },
@@ -895,11 +895,11 @@
           {
             "position": {
               "x": 605,
-              "y": 320
+              "y": 350
             },
             "size": {
               "width": 110,
-              "height": 140
+              "height": 110
             },
             "attrs": {
               "text": {
@@ -1242,7 +1242,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Success=1",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1256,7 +1256,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Success=1"
             ],
             "id": "4ec8fe7d-c55b-4e73-b650-56b2b742c4ba",
             "source": {
