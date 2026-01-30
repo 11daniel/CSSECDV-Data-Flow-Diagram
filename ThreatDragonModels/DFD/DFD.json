@@ -601,6 +601,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 14,
             "ports": {
               "groups": {
                 "top": {
@@ -684,7 +685,6 @@
               ]
             },
             "id": "225ab31e-d78a-4cb9-8e2f-359fd99b4bbb",
-            "zIndex": 14,
             "data": {
               "type": "tm.Process",
               "name": "Authorization Provider",
@@ -721,6 +721,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 15,
             "ports": {
               "groups": {
                 "top": {
@@ -804,7 +805,6 @@
               ]
             },
             "id": "da5dd297-94f2-4593-a0b1-def408488d38",
-            "zIndex": 15,
             "data": {
               "type": "tm.Process",
               "name": "LDAP",
