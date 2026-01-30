@@ -620,16 +620,16 @@
         ]
       },
       {
-        "id": 1,
-        "title": "New generic diagram",
-        "diagramType": "Generic",
-        "placeholder": "New generic diagram description",
-        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 2,
+        "title": "New CIA diagram",
+        "diagramType": "CIA",
+        "placeholder": "New CIA diagram description",
+        "thumbnail": "./public/content/images/thumbnail.cia.jpg",
         "version": "2.5.0",
         "cells": []
       }
     ],
-    "diagramTop": 2,
+    "diagramTop": 3,
     "reviewer": "11daniel",
     "threatTop": 0
   }
