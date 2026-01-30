@@ -1,0 +1,209 @@
+{
+  "version": "2.5.0",
+  "summary": {
+    "title": "Corrected Threat Model",
+    "owner": "11daniel",
+    "description": "Recreation of reference DFD with corrected syntax and logic.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "Pricezy"
+      },
+      {
+        "name": "t-akoyaki"
+      }
+    ],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "System Architecture DFD",
+        "diagramType": "STRIDE",
+        "cells": [
+          {
+            "id": "actor-browser-client",
+            "shape": "actor",
+            "position": {
+              "x": 50,
+              "y": 200
+            },
+            "size": {
+              "width": 120,
+              "height": 80
+            },
+            "data": {
+              "name": "Browser Client",
+              "type": "tm.Actor"
+            }
+          },
+          {
+            "id": "process-web-app",
+            "shape": "process",
+            "position": {
+              "x": 400,
+              "y": 200
+            },
+            "size": {
+              "width": 120,
+              "height": 80
+            },
+            "data": {
+              "name": "Web Application",
+              "type": "tm.Process"
+            }
+          },
+          {
+            "id": "process-auth-provider",
+            "shape": "process",
+            "position": {
+              "x": 400,
+              "y": 50
+            },
+            "size": {
+              "width": 120,
+              "height": 80
+            },
+            "data": {
+              "name": "Authorization Provider",
+              "type": "tm.Process"
+            }
+          },
+          {
+            "id": "process-ldap",
+            "shape": "process",
+            "position": {
+              "x": 750,
+              "y": 50
+            },
+            "size": {
+              "width": 120,
+              "height": 80
+            },
+            "data": {
+              "name": "LDAP",
+              "type": "tm.Process"
+            }
+          },
+          {
+            "id": "store-sql-db",
+            "shape": "store",
+            "position": {
+              "x": 750,
+              "y": 200
+            },
+            "size": {
+              "width": 120,
+              "height": 80
+            },
+            "data": {
+              "name": "SQL Database",
+              "type": "tm.Store"
+            }
+          },
+          {
+            "id": "flow-creds",
+            "shape": "flow",
+            "source": {
+              "cell": "actor-browser-client"
+            },
+            "target": {
+              "cell": "process-web-app"
+            },
+            "labels": [
+              {
+                "attrs": {
+                  "text": {
+                    "text": "User Credentials"
+                  }
+                }
+              }
+            ],
+            "data": {
+              "name": "User Sends User Credentials",
+              "type": "tm.Flow"
+            }
+          },
+          {
+            "id": "flow-auth-verify",
+            "shape": "flow",
+            "source": {
+              "cell": "process-web-app"
+            },
+            "target": {
+              "cell": "process-auth-provider"
+            },
+            "labels": [
+              {
+                "attrs": {
+                  "text": {
+                    "text": "Auth Verification"
+                  }
+                }
+              }
+            ],
+            "data": {
+              "name": "Auth Verification",
+              "type": "tm.Flow"
+            }
+          },
+          {
+            "id": "flow-priv-verify",
+            "shape": "flow",
+            "source": {
+              "cell": "process-auth-provider"
+            },
+            "target": {
+              "cell": "process-ldap"
+            },
+            "labels": [
+              {
+                "attrs": {
+                  "text": {
+                    "text": "Verifies Privilege"
+                  }
+                }
+              }
+            ],
+            "data": {
+              "name": "Verifies the Privilege",
+              "type": "tm.Flow"
+            }
+          },
+          {
+            "id": "flow-sql-query",
+            "shape": "flow",
+            "source": {
+              "cell": "process-web-app"
+            },
+            "target": {
+              "cell": "store-sql-db"
+            },
+            "labels": [
+              {
+                "attrs": {
+                  "text": {
+                    "text": "Insert Query"
+                  }
+                }
+              }
+            ],
+            "data": {
+              "name": "Insert Query With Feedback",
+              "type": "tm.Flow"
+            }
+          },
+          {
+            "id": "boundary-internet",
+            "shape": "trust-boundary",
+            "strokeDasharray": "5,5",
+            "data": {
+              "name": "Generic Trust Boundary",
+              "type": "tm.Boundary"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
