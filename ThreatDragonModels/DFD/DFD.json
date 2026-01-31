@@ -405,54 +405,36 @@
             ]
           },
           {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
+            "shape": "trust-boundary-curve",
             "width": 200,
             "height": 100,
             "zIndex": 10,
             "connector": "smooth",
             "data": {
-              "type": "tm.Flow",
-              "name": "Feedback Comments Saved",
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
               "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
+              "isTrustBoundary": true,
               "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
+              "crossingFlows": [],
+              "containedElements": []
             },
             "labels": [
-              "Feedback Comments Saved"
+              "Trust Boundary"
             ],
-            "id": "d331de54-7576-4a17-8e3b-7dce2fcf6c32",
+            "id": "55d92328-b88f-42eb-ada6-bea5d002492e",
             "source": {
-              "x": 490,
-              "y": 440
+              "x": 480,
+              "y": 20
             },
             "target": {
-              "x": 230,
-              "y": 450
+              "x": 490,
+              "y": 520
             },
             "vertices": [
               {
-                "x": 370,
-                "y": 480
+                "x": 430,
+                "y": 270
               }
             ]
           },
@@ -498,47 +480,65 @@
               "y": 360
             },
             "target": {
-              "x": 250,
-              "y": 340
+              "cell": "3fd02432-a9ae-43bf-be66-71adaf9a513c",
+              "port": "fb813525-1c8a-4b57-9cbe-1b50828bdfaa"
             },
             "vertices": [
               {
-                "x": 370,
+                "x": 380,
                 "y": 340
               }
             ]
           },
           {
-            "shape": "trust-boundary-curve",
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
             "width": 200,
             "height": 100,
             "zIndex": 10,
             "connector": "smooth",
             "data": {
-              "type": "tm.Boundary",
-              "name": "Trust Boundary",
+              "type": "tm.Flow",
+              "name": "Feedback Comments Saved",
               "description": "",
-              "isTrustBoundary": true,
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
               "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
             },
             "labels": [
-              "Trust Boundary"
+              "Feedback Comments Saved"
             ],
-            "id": "55d92328-b88f-42eb-ada6-bea5d002492e",
+            "id": "d331de54-7576-4a17-8e3b-7dce2fcf6c32",
             "source": {
-              "x": 480,
-              "y": 20
+              "x": 490,
+              "y": 440
             },
             "target": {
-              "x": 490,
-              "y": 520
+              "cell": "3fd02432-a9ae-43bf-be66-71adaf9a513c",
+              "port": "ca67dba1-d61d-48f1-97cd-c892ecec2a43"
             },
             "vertices": [
               {
-                "x": 430,
-                "y": 270
+                "x": 370,
+                "y": 480
               }
             ]
           },
@@ -1230,10 +1230,6 @@
               "port": "ecf9d112-2c5d-41b3-90dd-94df2312c47f"
             },
             "vertices": [
-              {
-                "x": 350,
-                "y": 430
-              },
               {
                 "x": 372,
                 "y": 430
